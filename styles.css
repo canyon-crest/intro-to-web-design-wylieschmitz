@@ -12,6 +12,9 @@ body{
     border-left: #000 5px;
     border-right: #000 5px;
 }
+.paragraph:hover{
+    border: #fff dotted 1px;
+}
 h1{
     background-color: black;
     border: #fff, solid, 3px;
@@ -53,13 +56,11 @@ a:hover{
 a:active{
     color: #940083
 }
-#pic1{
-    width: 35%;
-}
 #pic2{
     float: left;
     margin-left: 0px;
     margin-right: 25px;
+    width: 24%
 }
 .highlight{
     font-weight: 200;
