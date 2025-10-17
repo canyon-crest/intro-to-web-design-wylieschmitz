@@ -1,13 +1,13 @@
 body{
-    background-color: #4a1d1d;
+    background-color: #1c80b1;
     color: #ffffff;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
 }
 #container{
-    width: 800px;
+    width: 1100px;
     margin: 0 auto;
-    background-color: #2b0f0f;
+    background-color: #120e89;
     padding: 40px;
 }
 .paragraph:hover{
@@ -37,7 +37,7 @@ p{
 }
 img{
     float: right;
-    width: 30%;
+    width: 150px;
     border: #fff solid 1px;
     margin-left: 25px;
 }
@@ -58,11 +58,61 @@ a:active{
     float: left;
     margin-left: 0px;
     margin-right: 25px;
-    width: 24%
 }
 .highlight{
     font-weight: 200;
     background-color: yellow;
     padding: 1px;
     color: #000;
+}
+#sidebar{
+    background-color: black;
+    width: 225px;
+    float: right;
+    border: 2px solid white;
+    margin: 15px;
+    margin-top: 60px;
+    line-height: 2.25em;
+}
+#sidebar h3{
+    padding: 5px;
+    text-decoration: underline;
+    border: none;
+}
+@media (max-width: 1200px){
+    #container{
+        width: 90%;
+    }
+}
+@media (max-width: 992px){
+    #container{
+        width: 100%;
+    }
+    #container, p{
+        margin: 0;
+        padding: 0;
+    }
+    #sidebar{
+        width: 22.5%
+    }
+    body{
+        padding: 20px;
+    }
+    p{
+        text-align: justify;
+    }
+}
+@media (max-width: 768px){
+    #sidebar{
+        display: none;
+    }
+    img, #pic2{
+        float: none;
+        border: none;
+        width: 85%;
+        margin: 0 auto;
+    }
+    h3{
+        margin: 0 auto;
+    }
 }
