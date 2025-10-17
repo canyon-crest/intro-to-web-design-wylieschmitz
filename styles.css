@@ -11,7 +11,7 @@ body{
     padding: 40px;
 }
 .paragraph:hover{
-    border: #fff dotted 1px;
+    background-color: #1414ff;
 }
 h1{
     background-color: black;
@@ -36,14 +36,13 @@ p{
     line-height: 1.8em;
 }
 img{
-    float: right;
+    float: left;
     width: 150px;
     border: #fff solid 1px;
     margin-left: 25px;
 }
 a:link{
     color: #00ffff;
-    text-decoration: none;
 }
 a:visited{
     color: #007979
@@ -55,9 +54,9 @@ a:active{
     color: #940083
 }
 #pic2{
-    float: left;
-    margin-left: 0px;
-    margin-right: 25px;
+    float: right;
+    margin-left: 25px;
+    margin-right: 0;
 }
 .highlight{
     font-weight: 200;
@@ -66,13 +65,13 @@ a:active{
     color: #000;
 }
 #sidebar{
-    background-color: black;
+    background-color: #20003a;
     width: 225px;
     float: right;
     border: 2px solid white;
-    margin: 15px;
-    margin-top: 60px;
-    line-height: 2.25em;
+    margin: 40px 0 15px 30px;
+    line-height: 2em;
+    font-size: .8em
 }
 #sidebar h3{
     padding: 5px;
