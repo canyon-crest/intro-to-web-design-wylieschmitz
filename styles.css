@@ -214,6 +214,7 @@ a:active{
 @media (max-width: 992px){
     #container{
         width: 100%;
+        max-width: 100%;
     }
     #container, p{
         margin: 0;
