@@ -208,7 +208,7 @@ a:active{
 }
 @media (max-width: 1200px){
     #container{
-        width: 460px;
+        width: 800px;
     }
 }
 @media (max-width: 992px){
