@@ -5,6 +5,25 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div id="modal" class="modal">
+            <div class="card">
+                <a href="#">Close</a>
+                <h2>Demo</h2>
+               <p>Modal content</p>
+            </div>
+        </div>
+        <!-- checkbox controls modal state; checked by default so modal is open on load -->
+        <input type="checkbox" id="modal-toggle" class="modal-toggle" checked>
+        <label for="modal-toggle" class="modal-open">Open Modal</label>
+
+        <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="card">
+                <!-- label toggles checkbox to close -->
+                <label for="modal-toggle" class="modal-close">Close</label>
+                <h2 id="modal-title">Welcome!</h2>
+                <p id="modal-content">I hope you enjoy my webpage!</p>
+            </div>
+        </div>
         <div id="container">
             <h1>Wylie Schmitz</h1>
             <h2>

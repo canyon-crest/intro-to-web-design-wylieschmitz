@@ -86,16 +86,16 @@ img{
     box-shadow: 0 30px 80px rgba(15,23,42,0.28), 0 12px 36px rgba(15,23,42,0.14), inset 0 1px 0 rgba(255,255,255,0.03);
 }
 a:link{
-    color: #FF6B6B;
+    color: #8B5CF6;
 }
 a:visited{
-    color: #7C3AED
+    color: #F472B6
 }
 a:hover{
-    color: #FFA94D
+    color: #C084FC
 }
 a:active{
-    color: #613200
+    color: #9262c1
 }
 #pic2{
     float: right;
@@ -143,6 +143,49 @@ a:active{
 #sidebar ul li:nth-child(4){ animation-delay: 1320ms; }
 #sidebar ul li:nth-child(5){ animation-delay: 1680ms; }
 #sidebar ul li:nth-child(6){ animation-delay: 2040ms; }
+.modal-toggle {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.6);
+  padding: 2rem;
+  z-index: 999;
+}
+#modal-toggle:checked ~ .modal {
+    display: flex;
+}
+:target.modal { display: flex; }
+.modal .card {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+}
+.modal-open,
+.modal-close {
+    cursor: pointer;
+    color: var(--accent, #1A73E8);
+    text-decoration: underline;
+}
+.modal-open{
+    display: none;
+}
+#modal-content{
+    text-align: center;
+}
+#modal-title{
+    font-style: normal;
+}
 /* keyframes for slide + fade */
 @keyframes slideFadeIn{
     0%   { opacity: 0; transform: translateX(14px) scale(.99); filter: blur(2px); }
